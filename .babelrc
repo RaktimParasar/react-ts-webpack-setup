@@ -7,6 +7,6 @@
         "runtime": "automatic"
       }
     ],
-    "@babel/preset-typesrcipt"
+    "@babel/preset-typescript"
   ]
 }
