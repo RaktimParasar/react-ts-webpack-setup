@@ -14,10 +14,10 @@ const App = () => {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactlogo} className="logo" alt="React logo" />
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
           <img src={tslogo} className="logo" alt="Typescript logo" />
         </a>
       </div>
