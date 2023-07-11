@@ -1,8 +1,11 @@
+import { useState } from 'react'
+
 import './App.css'
 import reactlogo from './assets/react.svg'
 import tslogo from './assets/typescript.svg'
 
 const App = () => {
+  const [count, setCount] = useState<number>(0)
   return (
     <>
       <div>
@@ -22,7 +25,9 @@ const App = () => {
         <p>A starter setup for React with TypeScript and Webpack. </p>
       </div>
       <div>
-        {process.env.NODE_ENV} {process.env.name}
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
       </div>
     </>
   )
