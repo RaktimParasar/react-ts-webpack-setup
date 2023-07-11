@@ -1,16 +1,8 @@
-import { useState } from 'react'
-
 import './App.css'
 import reactlogo from './assets/react.svg'
 import tslogo from './assets/typescript.svg'
 
 const App = () => {
-  const [count, setCount] = useState<number>(0)
-
-  const handleCount = () => {
-    setCount((count) => count + 1)
-  }
-
   return (
     <>
       <div>
@@ -32,7 +24,6 @@ const App = () => {
       <div>
         {process.env.NODE_ENV} {process.env.name}
       </div>
-      <button onClick={handleCount}>count {count}</button>
     </>
   )
 }
