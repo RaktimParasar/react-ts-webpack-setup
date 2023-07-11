@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-import "./App.css";
-import reactlogo from "./assets/react.svg";
-import tslogo from "./assets/typescript.svg";
+import './App.css'
+import reactlogo from './assets/react.svg'
+import tslogo from './assets/typescript.svg'
 
 const App = () => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState<number>(0)
 
   const handleCount = () => {
-    setCount((count) => count + 1);
-  };
+    setCount((count) => count + 1)
+  }
 
   return (
     <>
@@ -17,7 +17,11 @@ const App = () => {
         <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactlogo} className="logo" alt="React logo" />
         </a>
-        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={tslogo} className="logo" alt="Typescript logo" />
         </a>
       </div>
@@ -30,7 +34,7 @@ const App = () => {
       </div>
       <button onClick={handleCount}>count {count}</button>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
